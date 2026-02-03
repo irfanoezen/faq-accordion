@@ -27,6 +27,7 @@
 body {
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
   font-optical-sizing: auto;
+  background-color: var(--purple-100);
   /* 4. Add accessible line-height */
   line-height: 1.5;
   /* 5. Improve text rendering */
@@ -81,4 +82,8 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.faq-component {
+  background-color: #fff;
 }
