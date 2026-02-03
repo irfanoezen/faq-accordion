@@ -86,4 +86,16 @@ h6 {
 
 .faq-component {
   background-color: #fff;
+  padding: 24px;
+}
+
+.faq__heading {
+  display: flex;
+  gap: 24px;
+}
+
+.faq__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--purple-950);
 }
