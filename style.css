@@ -63,12 +63,12 @@ h3,
 h4,
 h5,
 h6 {
-  overflow-wrap: break-word;
+  /* overflow-wrap: break-word; */
 }
 
 /* 9. Improve line wrapping */
 p {
-  text-wrap: pretty;
+  /* text-wrap: pretty; */
 }
 h1,
 h2,
@@ -76,7 +76,7 @@ h3,
 h4,
 h5,
 h6 {
-  text-wrap: balance;
+  /* text-wrap: balance; */
 }
 
 /*
@@ -109,6 +109,7 @@ h6 {
 
 .faq__head {
   display: flex;
+  gap: 24px;
   justify-content: space-between;
   align-items: center;
 
@@ -145,11 +146,15 @@ h6 {
 }
 
 .faq__body {
-  /* display: none; */
+  display: none;
   padding-block-start: 24px;
   font-size: 14px;
   line-height: 1.5;
   color: var(--purple-600);
+}
+
+.faq__body--active {
+  display: block;
 }
 
 .faq__horizontal-line {
