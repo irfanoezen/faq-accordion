@@ -28,6 +28,9 @@ body {
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
   font-optical-sizing: auto;
   background-color: var(--purple-100);
+  display: grid;
+  place-content: center;
+  /* height: 100vh; */
   /* 4. Add accessible line-height */
   line-height: 1.5;
   /* 5. Improve text rendering */
@@ -85,6 +88,9 @@ h6 {
 }
 
 .faq-component {
+  max-width: 327px;
+  border-radius: 8px;
+  box-shadow: 0 32px 56px 0 hsla(281, 100%, 23%, 10%);
   background-color: #fff;
   padding: 24px;
 }
@@ -92,10 +98,61 @@ h6 {
 .faq__heading {
   display: flex;
   gap: 24px;
+  padding-block-end: 24px;
 }
 
 .faq__title {
   font-size: 32px;
   font-weight: 700;
   color: var(--purple-950);
+}
+
+.faq__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h4 {
+    font-weight: 600;
+    color: var(--purple-950);
+  }
+
+  h4:hover,
+  h4:focus {
+    cursor: pointer;
+    color: var(--violet-600);
+  }
+
+  span {
+    width: 24px;
+    background-color: var(--violet-600);
+    border-radius: 50%;
+    color: #fff;
+  }
+
+  span:hover,
+  span:focus {
+    cursor: pointer;
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings:
+      "FILL" 0,
+      "wght" 500,
+      "GRAD" 0,
+      "opsz" 16;
+  }
+}
+
+.faq__body {
+  /* display: none; */
+  padding-block-start: 24px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--purple-600);
+}
+
+.faq__horizontal-line {
+  margin-block: 24px;
+  border: solid 1px var(--purple-100);
 }
