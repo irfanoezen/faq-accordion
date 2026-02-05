@@ -153,13 +153,23 @@ h6 {
   font-size: 14px;
   line-height: 1.5;
   color: var(--purple-600);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1000ms ease-in-out;
 }
 
 .faq__body--active {
   display: block;
+  max-height: 500px;
 }
 
 .faq__horizontal-line {
   margin-block: 24px;
   border: solid 1px var(--purple-100);
+}
+
+@media screen and (min-width: 768px) {
+  .faq-component {
+    max-width: 600px;
+  }
 }
