@@ -34,7 +34,7 @@ body {
   /* 5. Improve text rendering
   -webkit-font-smoothing: antialiased; */
   background-image: url("assets/images/background-pattern-mobile.svg");
-  background-repeat: repeat-x;
+  background-repeat:repeat-x;
   background-position: top center;
   background-attachment: fixed;
   background-size: auto 50vh;
