@@ -33,7 +33,19 @@ body {
   height: 100vh;
   /* 5. Improve text rendering
   -webkit-font-smoothing: antialiased; */
+  background-image: url("assets/images/background-pattern-mobile.svg");
+  background-repeat: repeat-x;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: auto 50vh;
 }
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url("assets/images/background-pattern-desktop.svg");
+  }
+}
+
 
 /* 6. Improve media defaults */
 img,

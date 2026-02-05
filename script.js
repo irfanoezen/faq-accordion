@@ -18,10 +18,12 @@ faqContainer.addEventListener("click", (e) => {
         const otherIcon = item.querySelector("span");
         otherBody.classList.remove("faq__body--active");
         otherIcon.classList.remove("icon--active");
+        otherIcon.textContent = "add";
       }
     });
 
     body.classList.toggle("faq__body--active");
     iconContainer.classList.toggle("icon--active");
+    iconContainer.textContent = iconContainer.textContent === "add" ? "remove" : "add";
   }
 });
