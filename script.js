@@ -12,6 +12,18 @@ faqContainer.addEventListener("click", (e) => {
     const body = parent.querySelector(".faq__body");
     const iconContainer = parent.querySelector("span");
 
+    // Close all other open items
+    const allItems = faqContainer.querySelectorAll(".faq__item");
+    allItems.forEach((item) => {
+      if (item !== parent) {
+        const otherBody = item.querySelector(".faq__body");
+        const otherIcon = item.querySelector("span");
+        otherBody.classList.remove("faq__body--active");
+        otherIcon.classList.remove("icon--active");
+      }
+    });
+
+    // Toggle the clicked item
     body.classList.toggle("faq__body--active");
     iconContainer.classList.toggle("icon--active");
   }
