@@ -1,3 +1,10 @@
+:root {
+  --purple-950: #301534;
+  --purple-600: #8B6990;
+  --purple-100: #F8EEFF;
+  --violet-600: #AD28EB;
+}
+
 *,
 *::before,
 *::after {
