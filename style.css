@@ -1,8 +1,8 @@
 :root {
   --purple-950: #301534;
-  --purple-600: #8B6990;
-  --purple-100: #F8EEFF;
-  --violet-600: #AD28EB;
+  --purple-600: #8b6990;
+  --purple-100: #f8eeff;
+  --violet-600: #ad28eb;
 }
 
 *,
@@ -13,8 +13,11 @@
 }
 
 body {
-  font-family: 'Work Sans', Arial, Helvetica, sans-serif;
-  line-height: 1.5;
+  background-color: var(--purple-100);
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: grid;
+  place-content: center;
 }
 
 img,
@@ -40,24 +43,61 @@ a {
 
 @font-face {
   font-display: swap;
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
-  src: url('assets/fonts/work-sans-v24-latin-regular.woff2') format('woff2');
+  src: url("assets/fonts/work-sans-v24-latin-regular.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   font-style: normal;
   font-weight: 600;
-  src: url('assets/fonts/work-sans-v24-latin-600.woff2') format('woff2');
+  src: url("assets/fonts/work-sans-v24-latin-600.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   font-style: normal;
   font-weight: 700;
-  src: url('assets/fonts/work-sans-v24-latin-700.woff2') format('woff2');
+  src: url("assets/fonts/work-sans-v24-latin-700.woff2") format("woff2");
+}
+
+.faq__card {
+  max-width: 327px;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 24px 24px 0 24px;
+}
+
+.horizontal-line {
+  border: solid 1px var(--purple-100);
+}
+
+.faq__answer {
+  display: none;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--purple-600);
+  margin-block-end: 24px;
+}
+
+.faq__answer.active {
+  display: block;
+}
+
+.faq__question-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding-block: 24px;
+}
+
+.faq__question {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--purple-950);
 }
