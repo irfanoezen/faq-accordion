@@ -121,6 +121,11 @@ a {
   color: var(--purple-950);
 }
 
+.faq__question:hover,
+.faq__question:focus {
+  color: var(--violet-600);
+}
+
 .faq__icon:hover {
   cursor: pointer;
 }

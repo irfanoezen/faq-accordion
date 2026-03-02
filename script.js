@@ -8,11 +8,16 @@ faqIcons.forEach((icon) => {
       event.target.parentElement.parentElement.querySelector(".faq__answer");
     if (checkedAnswer.classList.contains("active")) {
       checkedAnswer.classList.remove("active");
+      event.target.setAttribute("src", "assets/images/icon-plus.svg");
     } else {
       faqAnswers.forEach((answer) => {
         answer.classList.remove("active");
+        faqIcons.forEach((icon) => {
+          icon.setAttribute("src", "assets/images/icon-plus.svg");
+        });
       });
       checkedAnswer.classList.add("active");
+      event.target.setAttribute("src", "assets/images/icon-minus.svg");
     }
   });
 });
