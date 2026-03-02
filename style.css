@@ -18,6 +18,10 @@ body {
   height: 100vh;
   display: grid;
   place-content: center;
+  background-image: url("assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100vw 33vh;
 }
 
 img,
@@ -76,12 +80,27 @@ a {
   border: solid 1px var(--purple-100);
 }
 
+.faq__head {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.faq__logo {
+  width: 24px;
+}
+
+.faq__title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
 .faq__answer {
   display: none;
   font-size: 14px;
   line-height: 1.5;
   color: var(--purple-600);
-  margin-block-end: 24px;
+  padding-block-end: 24px;
 }
 
 .faq__answer.active {
@@ -100,4 +119,38 @@ a {
   font-size: 16px;
   font-weight: 600;
   color: var(--purple-950);
+}
+
+.faq__icon:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .body {
+    background-image: url("assets/images/background-pattern-desktop.svg");
+  }
+
+  .faq__card {
+    max-width: 608px;
+    padding: 40px 40px 16px 40px;
+  }
+
+  .faq__logo {
+    width: 40px;
+  }
+
+  .faq__title {
+    font-size: 56px;
+    line-height: 66px;
+  }
+
+  .faq__question {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .faq__answer {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
